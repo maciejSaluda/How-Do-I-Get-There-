@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Projekt bez tytułu" translatesAutoresizingMaskIntoConstraints="NO" id="cqu-UW-pGV">
+                                <rect key="frame" x="65" y="263" width="284" height="173"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Do I Get There ? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csg-TC-BzA">
+                                <rect key="frame" x="65" y="490" width="306" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="z68-qg-ZEt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.dotted" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vlq-On-L1H">
+                                <rect key="frame" x="172" y="589.5" width="70" height="62"/>
+                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="5vl-XX-Wo6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vlq-On-L1H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="46w-6m-BpV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vlq-On-L1H" secondAttribute="bottom" constant="210" id="ApR-bJ-6Rc"/>
+                            <constraint firstItem="cqu-UW-pGV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="219" id="HWG-Ib-BW3"/>
+                            <constraint firstItem="vlq-On-L1H" firstAttribute="top" secondItem="csg-TC-BzA" secondAttribute="bottom" constant="61" id="QR4-Nj-t82"/>
+                            <constraint firstItem="csg-TC-BzA" firstAttribute="top" secondItem="cqu-UW-pGV" secondAttribute="bottom" constant="54" id="Rvd-kL-B7j"/>
+                            <constraint firstItem="cqu-UW-pGV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="X1H-Ha-heT"/>
+                            <constraint firstItem="cqu-UW-pGV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bD5-f8-P6C"/>
+                            <constraint firstItem="cqu-UW-pGV" firstAttribute="leading" secondItem="csg-TC-BzA" secondAttribute="leading" id="jS6-jZ-yej"/>
+                            <constraint firstItem="cqu-UW-pGV" firstAttribute="centerX" secondItem="vlq-On-L1H" secondAttribute="centerX" id="mJN-Fo-WpO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Projekt bez tytułu" width="375" height="375"/>
+        <image name="circle.dotted" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

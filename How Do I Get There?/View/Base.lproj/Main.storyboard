@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="How_Do_I_Get_There_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point your destination on the map" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qu9-qu-Re0">
+                                <rect key="frame" x="26" y="117" width="362" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="Lwi-zy-VOl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvp-tF-qtQ">
+                                <rect key="frame" x="117" y="794" width="169" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="ag5-DF-gWh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <backgroundConfiguration key="background" cornerRadius="50">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Search">
+                                            <attributes>
+                                                <font key="NSFont" size="22" name="Copperplate"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3S6-Qc-u0X"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BEJ-BZ-Xzh">
+                                <rect key="frame" x="0.0" y="230" width="414" height="501"/>
+                            </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Projekt bez tytułu" translatesAutoresizingMaskIntoConstraints="NO" id="kWO-Z2-Enj">
+                                <rect key="frame" x="11" y="26" width="77" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your next bus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N90-Pp-e9F">
+                                <rect key="frame" x="117" y="62" width="234.5" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="GVu-Ur-74L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.81960784313725488" green="0.75686274509803919" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Qu9-qu-Re0" firstAttribute="top" secondItem="N90-Pp-e9F" secondAttribute="bottom" constant="26" id="AOy-1E-z3U"/>
+                            <constraint firstItem="BEJ-BZ-Xzh" firstAttribute="top" secondItem="Qu9-qu-Re0" secondAttribute="bottom" constant="32" id="BnW-Jr-1eO"/>
+                            <constraint firstItem="N90-Pp-e9F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="Ggz-Vk-44X"/>
+                            <constraint firstItem="Gvp-tF-qtQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OZ4-Vk-Upx"/>
+                            <constraint firstItem="Gvp-tF-qtQ" firstAttribute="top" secondItem="BEJ-BZ-Xzh" secondAttribute="bottom" constant="63" id="P16-Ap-8XL"/>
+                            <constraint firstItem="N90-Pp-e9F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="SRG-ss-Zej"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gvp-tF-qtQ" secondAttribute="trailing" constant="128" id="Tci-9p-3AC"/>
+                            <constraint firstItem="Qu9-qu-Re0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="Wxm-4v-kUs"/>
+                            <constraint firstItem="N90-Pp-e9F" firstAttribute="leading" secondItem="Gvp-tF-qtQ" secondAttribute="leading" id="gw5-PX-mQr"/>
+                            <constraint firstItem="Qu9-qu-Re0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h8c-N5-Z9w"/>
+                            <constraint firstItem="Qu9-qu-Re0" firstAttribute="centerX" secondItem="BEJ-BZ-Xzh" secondAttribute="centerX" id="kM8-Nv-5OW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N90-Pp-e9F" secondAttribute="trailing" constant="62.5" id="vWJ-c6-f45"/>
+                            <constraint firstItem="BEJ-BZ-Xzh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xxu-Cx-Sx5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="BEJ-BZ-Xzh" id="JbT-JQ-uOY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+        <!--Route View Controller-->
+        <scene sceneID="6iK-JU-GdT">
+            <objects>
+                <viewController storyboardIdentifier="RouteViewController" id="uNi-Q0-JXP" customClass="RouteViewController" customModule="How_Do_I_Get_There_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EVM-fc-g8m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Projekt bez tytułu" translatesAutoresizingMaskIntoConstraints="NO" id="E8o-BC-f6E">
+                                <rect key="frame" x="138" y="117" width="113" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="rbO-ph-D8F"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="hfH-CB-oHu">
+                                <rect key="frame" x="80" y="255" width="254" height="443.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tp5-c7-oFH">
+                                        <rect key="frame" x="82" y="0.0" width="90" height="25.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" label="when"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25.5" id="D0E-gr-P3X"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="timeLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGN-IP-pxq">
+                                        <rect key="frame" x="77" y="37.5" width="100.5" height="79"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="timeLabel"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="79" id="flm-d4-AWr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where from?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dW-qu-1Pv">
+                                        <rect key="frame" x="44.5" y="128.5" width="165" height="25.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" label="whereFrom"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25.5" id="nvf-s3-gae"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9c-U1-qz3">
+                                        <rect key="frame" x="70.5" y="166" width="113.5" height="79"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="placeLabel"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="79" id="yfR-Qr-odM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where to?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byQ-Cu-FYe">
+                                        <rect key="frame" x="62" y="257" width="130" height="25.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" label="whereTo"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25.5" id="lbq-wn-Vxs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="destinationLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8h-08-0oH">
+                                        <rect key="frame" x="39" y="294.5" width="176" height="79"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="destinationLabel"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which bus number?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aM8-jH-lkv">
+                                        <rect key="frame" x="3.5" y="385.5" width="247.5" height="25.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" label="WhichBusNumber"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25.5" id="rqP-ml-Y1Y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="busNumber" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ua1-ZU-kAz">
+                                        <rect key="frame" x="69" y="423" width="116" height="20.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="timeLabel"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="UWZ-ce-Xz2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpe-pX-mHv">
+                                <rect key="frame" x="185" y="78" width="44" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="1ul-Et-Kkd"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" image="arrow.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="uNi-Q0-JXP" eventType="touchUpInside" id="7hx-mq-9mM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ahI-qz-p31"/>
+                        <color key="backgroundColor" red="0.81960784313725488" green="0.75686274509803919" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="xpe-pX-mHv" firstAttribute="leading" secondItem="ahI-qz-p31" secondAttribute="leading" constant="185" id="06r-d9-XLX"/>
+                            <constraint firstItem="ahI-qz-p31" firstAttribute="trailing" secondItem="E8o-BC-f6E" secondAttribute="trailing" constant="163" id="1WW-st-ZqT"/>
+                            <constraint firstItem="E8o-BC-f6E" firstAttribute="leading" secondItem="ahI-qz-p31" secondAttribute="leading" constant="138" id="1YM-37-dS7"/>
+                            <constraint firstItem="E8o-BC-f6E" firstAttribute="top" secondItem="xpe-pX-mHv" secondAttribute="bottom" constant="8" id="4Zx-KP-WzS"/>
+                            <constraint firstItem="hfH-CB-oHu" firstAttribute="top" secondItem="E8o-BC-f6E" secondAttribute="bottom" constant="49" id="A0c-sj-fgU"/>
+                            <constraint firstItem="hfH-CB-oHu" firstAttribute="leading" secondItem="ahI-qz-p31" secondAttribute="leading" constant="80" id="IoH-95-mnC"/>
+                            <constraint firstItem="hfH-CB-oHu" firstAttribute="centerX" secondItem="xpe-pX-mHv" secondAttribute="centerX" id="M80-jk-Yaf"/>
+                            <constraint firstItem="xpe-pX-mHv" firstAttribute="centerX" secondItem="EVM-fc-g8m" secondAttribute="centerX" id="MDs-cM-yA9"/>
+                            <constraint firstItem="ahI-qz-p31" firstAttribute="bottom" secondItem="hfH-CB-oHu" secondAttribute="bottom" constant="163.5" id="QoI-7E-tP0"/>
+                            <constraint firstItem="xpe-pX-mHv" firstAttribute="top" secondItem="ahI-qz-p31" secondAttribute="top" constant="34" id="yfI-Tg-c4X"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ai4-RV-jTU"/>
+                    <connections>
+                        <outlet property="busNumber" destination="Ua1-ZU-kAz" id="Wpu-EX-v2C"/>
+                        <outlet property="destinationLabel" destination="Z8h-08-0oH" id="4r2-3u-yx9"/>
+                        <outlet property="placeLabel" destination="H9c-U1-qz3" id="6Ox-Ya-xCZ"/>
+                        <outlet property="timeLabel" destination="IGN-IP-pxq" id="z8V-sM-6Rf"/>
+                        <outlet property="when" destination="Tp5-c7-oFH" id="DRi-Kb-J4t"/>
+                        <outlet property="whereFrom" destination="1dW-qu-1Pv" id="sYQ-6H-Zne"/>
+                        <outlet property="whereTo" destination="byQ-Cu-FYe" id="wsl-SA-y9X"/>
+                        <outlet property="whichBusNumber" destination="aM8-jH-lkv" id="Ntl-iX-4W0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sz9-7y-dIp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937.68115942028987" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Projekt bez tytułu" width="375" height="375"/>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+    </resources>
+</document>
